@@ -1,0 +1,144 @@
+:root {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background-color: #f4f7fb;
+  color: #1d2b3a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #2f80ed, #56ccf2);
+  color: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.metric {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.metric h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #4f5d75;
+}
+
+.metric p {
+  font-size: 2rem;
+  margin: 0.6rem 0 0;
+  font-weight: bold;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.panel {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.panel table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.panel th,
+.panel td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #e0e7ef;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.chat {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+#messages {
+  max-height: 320px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  border-left: 4px solid #2f80ed;
+  padding-left: 0.75rem;
+}
+
+.message .meta {
+  font-size: 0.8rem;
+  color: #6b7b93;
+}
+
+.interview {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+#interview-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#interview-form label {
+  font-weight: 600;
+}
+
+#interview-form input,
+#interview-form select {
+  flex: 1 1 200px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #c8d4e6;
+}
+
+#interview-form button {
+  background: #2f80ed;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#interview-response {
+  margin-top: 0.75rem;
+  font-style: italic;
+  color: #334e68;
+}
